@@ -1,9 +1,11 @@
-valorDeCompra = prompt("Digite aqui o seu valor de compra:");
+alert('Boas vindas ao jogo do número secreto');
+let numeroSecreto = 9;
+console.log(numeroSecreto)
+let chute = prompt('Escolha um número entre 1 e 10');
 
-if (valorDeCompra > 100) {
-    alert("Parabéns, você recebeu 10% de desconto!");
-} else if (valorDeCompra <= 100 && valorDeCompra > 0) {
-    alert("Desconto apenas para compras acima de R$100.");
-} else{
-    alert("Valor inválido. Por favor, insira um valor positivo.");
+// se chute for igual ao número secreto
+if (chute == numeroSecreto) {
+    alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto}`);
+} else {
+    alert('Você errou :(')
 }
